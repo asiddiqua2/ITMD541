@@ -5,32 +5,22 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    text-align: center;
-    background-color: #3498db;
-    color: white;
-    padding: 20px 0;
-}
 
-.intro-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.box {
-    width: 45%;
-    padding: 20px;
+.outer-container {
+    width: 70%;
+    margin: 20px auto;
+    border: 30px solid #e74c3c; /* Color for the outer border */
     border-radius: 10px;
-    margin: 10px;
+    background-color: #2ecc71; /* Color for the inner background */
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.box1 {
-    background-color: #2ecc71;
-    color: white;
+.outer-container h1 {
+    margin-bottom: 20px;
 }
 
-.box2 {
-    background-color: #e74c3c;
-    color: white;
+.outer-container p {
+    margin-bottom: 15px;
 }
