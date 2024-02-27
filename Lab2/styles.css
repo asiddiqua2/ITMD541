@@ -2,32 +2,38 @@
 
 #flex-section1 ul {
 	display: flex;
-	justify-content: space-between;
-  }
-
+	list-style: none;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0;
+	margin: 0;	
+}
 /* end Flexbox Part 1 */
-
+ 
 
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-
+	display: flex;
+	margin: 0;
+	padding: 0;	
 }
 
 #flex-section2 li {
-
+	list-style: none;
+	flex: 1;	
 }
 
 #flex-section2 .item1 {
-
+	order: 1;	
 }
 
 #flex-section2 .item2 {
-
+	order: 3;
 }
 
 #flex-section2 .item3 {
-
+	order: 2;
 }
 
 /* end Flexbox Part 2 */
@@ -36,11 +42,18 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	display: flex;
+	align-items: center;
+	padding: 35%;
 }
 
 #flex-section3 .tags ul {
-
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;	
 }
 
 /* end Flexbox Part 3 */
@@ -49,7 +62,10 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
-
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	grid-gap: 20px;
+  	grid-auto-rows: 100px;
 }
 
 /* end Grid Part 1 */
@@ -58,11 +74,15 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-
+	grid-row: 1 / span 3;
+	grid-column: 2 / span 3;
+	z-index: 2;
 }
 
 #grid-section2 .gridboxred {
-
+	grid-row: 2;
+	grid-column: 1 / span 2;
+	z-index: 1;
 }
 
 /* end Grid Part 2 */
@@ -71,23 +91,30 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 100px 300px 100px;
+	grid-gap: 10px;	
 }
 
 #grid-section3 .box1 {
-
+	grid-column: 1 / span 3;
 }
 
 #grid-section3 .box2 {
-
+	grid-row: 2;
+	grid-column: 2 / span 2;
 }
 
 #grid-section3 .box3 {
+	grid-row: 2;
+	grid-column: 1;
 
 }
 
 #grid-section3 .box4 {
-
+	grid-row: 3;
+	grid-column: 1 / span 3;
 }
 
 /* end Grid Part 3 */
@@ -101,15 +128,13 @@
 	color: #000;
 	padding: 20px;
 	text-decoration: none;
-
-
+	transition: background-color 3s ease, color 3s ease;
 }
 
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
-
-
+	transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* end Transition Part */
