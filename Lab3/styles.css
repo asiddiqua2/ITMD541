@@ -33,6 +33,12 @@ body {
     margin-bottom: 20px;
   }
   
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
   label {
     display: block;
     margin-bottom: 5px;
@@ -45,6 +51,11 @@ body {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+  }
+  
+  input[type="range"]:disabled,
+  span[disabled] {
+    background-color: #f2f2f2;
   }
   
   .result {
