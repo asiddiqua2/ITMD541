@@ -8,7 +8,7 @@ billTotal.addEventListener('input', calculateTip);
 tipPercentage.addEventListener('input', calculateTip);
 
 function calculateTip() {
-  const billTotalInput = billTotal.value.trim();
+  const billTotalInput = document.getElementById('billTotal').value.trim();
   const billTotalError = document.getElementById('billTotalError');
 
   // Check if the input is a valid number (integer or float)
@@ -16,9 +16,9 @@ function calculateTip() {
     billTotalError.textContent = 'Please enter a valid number for the bill total.';
     tipAmount.textContent = '$0.00';
     totalBill.textContent = '$0.00';
-    return;
+    return; // Exit the function if the input is invalid
   } else {
-    billTotalError.textContent = '';
+    billTotalError.textContent = ''; // Clear the error message if the input is valid
   }
 
   const bill = parseFloat(billTotalInput) || 0;
