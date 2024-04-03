@@ -11,7 +11,7 @@ function calculateTip() {
   const billTotalInput = billTotal.value.trim();
   const billTotalError = document.getElementById('billTotalError');
 
-  // Check if the input is a valid number (integer or float)
+  
   if (billTotalInput === '' || isNaN(parseFloat(billTotalInput))) {
     billTotalError.textContent = 'Please enter a valid number for the bill total.';
     tipAmount.textContent = '$0.00';
