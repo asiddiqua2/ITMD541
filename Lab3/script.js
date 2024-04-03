@@ -11,14 +11,14 @@ function calculateTip() {
   const billTotalInput = document.getElementById('billTotal').value.trim();
   const billTotalError = document.getElementById('billTotalError');
 
-  // Check if the input is a valid number (integer or float)
+  
   if (billTotalInput === '' || isNaN(parseFloat(billTotalInput))) {
     billTotalError.textContent = 'Please enter a valid number for the bill total.';
     tipAmount.textContent = '$0.00';
     totalBill.textContent = '$0.00';
-    return; // Exit the function if the input is invalid
+    return; 
   } else {
-    billTotalError.textContent = ''; // Clear the error message if the input is valid
+    billTotalError.textContent = ''; 
   }
 
   const bill = parseFloat(billTotalInput) || 0;
