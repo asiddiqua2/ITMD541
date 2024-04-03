@@ -1,75 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  .name {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .input-group {
-    margin-bottom: 20px;
-  }
-  
-  .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="number"],
-  input[type="range"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="range"]:disabled,
-  span[disabled] {
-    background-color: #f2f2f2;
-  }
-  
-  .result {
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .result p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .result p span {
-    margin-left: 10px;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #333333; /* Dark gray background for the calculator */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  color: #ffffff; /* Set text color to white for better visibility */
+}
+
+.name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: #ff6666; /* Change the error message color to a reddish shade */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"],
+input[type="range"],
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff; /* Set input field background to white */
+  color: #333333; /* Set input field text color to dark gray */
+}
+
+input[type="range"]:disabled,
+span[disabled] {
+  background-color: #666666; /* Change the disabled input field background to a darker gray */
+  color: #cccccc; /* Change the disabled input field text color to a lighter gray */
+}
+
+.result {
+  text-align: center;
+  font-weight: bold;
+}
+
+.result p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.result p span {
+  margin-left: 10px;
+}
