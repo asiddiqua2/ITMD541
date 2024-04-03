@@ -62,3 +62,14 @@ body {
     text-align: center;
     font-weight: bold;
   }
+  
+  .result p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .result p span {
+    margin-left: 10px;
+  }
